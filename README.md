@@ -1,4 +1,4 @@
-# Introduction to Programming Using C
+# IPC144 - Introduction to Programming Using C
 
 This a collection of exercises, workshops and assignments from the course IPC144 at Seneca College.
 
