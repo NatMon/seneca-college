@@ -29,7 +29,7 @@ Now you have a place to store your source code. To begin writing source code, cr
 #include <stdio.h>
 
 int main(void) 
-{
+  {
   printf("+-----------------------+\n");
   printf("|                       |\n");
   printf("|      CODE QUEST       |\n");
@@ -37,7 +37,7 @@ int main(void)
   printf("+-----------------------+\n");
   
   return 0;
-}
+  }
 ```
 
 ### SUBMISSION
