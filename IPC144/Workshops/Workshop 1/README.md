@@ -10,7 +10,16 @@ Upon successful completion of this workshop, you will be able to
 
 ### SPECIFICATIONS
 
-Login to your Matrix (matrix.senecac.on.ca)
+Login to your Matrix (matrix.senecac.on.ca) accounts via SSH using and SSH client like putty. You will need a Matrix account before you are able to do this.
+
+Once logged in, make a new directory for game called codeQuest and enter that directory. The commands below will accomplish this task:
+
+```c
+mkdir codeQuest
+cd codeQuest
+```
+
+Now you have a place to store your source code. To begin writing source code, create a new file called "w1.c" in a text editor of your choice (such as VI or pico) and enter the following C code:
 
 ```c
 //Code Quest
@@ -30,3 +39,7 @@ int main(void)
   return 0;
 }
 ```
+
+### SUBMISSION
+
+Upload your solution according to your instructor's guideline.
