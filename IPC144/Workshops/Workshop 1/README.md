@@ -5,7 +5,7 @@ In this workshop, you will begin your development of a text based game **"Code Q
 ### LEARNING OUTCOMES
 
 Upon successful completion of this workshop, you will be able to 
-- use opearting system utilities to edit, compile, and arun programs on a variety of platforms 
+- use operating system utilities to edit, compile, and arun programs on a variety of platforms 
 - transfer source code between a local compyter and a remote one
 
 ### SPECIFICATIONS
