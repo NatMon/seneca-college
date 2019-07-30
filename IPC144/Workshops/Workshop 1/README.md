@@ -31,9 +31,9 @@ Now you have a place to store your source code. To begin writing source code, cr
 int main(void) 
 {
   printf("+-----------------------+\n");
-  printf("+                       +\n");
-  printf("+      CODE QUEST       +\n");
-  printf("+                       +\n");
+  printf("|                       |\n");
+  printf("|      CODE QUEST       |\n");
+  printf("|                       |\n");
   printf("+-----------------------+\n");
   
   return 0;
