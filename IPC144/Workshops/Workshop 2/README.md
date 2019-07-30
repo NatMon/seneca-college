@@ -6,7 +6,7 @@ In this workshop, you will continue your development of a text based game "Code 
 
 Upon successful completion of this workshop, you will be able to
 
-- Retrieve input from user
+- Retrieve input from the user
 - Select appropriate types for your program variables
 - Convert between integer and floating-point types
 
