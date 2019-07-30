@@ -1,6 +1,6 @@
-//Code Quest
-//By: Natalia Monsalve
-//w1.c
+// Code Quest
+// By: Natalia Monsalve
+// w1.c
 
 #include <stdio.h>
 
