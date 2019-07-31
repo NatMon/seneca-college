@@ -39,7 +39,3 @@ int main(void)
   return 0;
   }
 ```
-
-### SUBMISSION
-
-Upload your solution according to your instructor's guideline.
