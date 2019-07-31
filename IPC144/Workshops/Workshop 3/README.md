@@ -74,3 +74,11 @@ You Won!
 ```
 
 ### PART 2 (BONUS):
+
+### SPECIFICATIONS
+
+### BUILDING THE GAME
+
+If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs.
+
+Copy the source code from this lab (excluding the main and braces) and open up your "w2.c" file. Paste the copied source code into the code quest source file below the player stats section within the main. Remove the variable declarations for the player stats (except HP) and change this lab code to use the player stat variables from lab 2. If successful, the output of the program should have the itro screen and followed by the character creation section and the battles should commence differently depending on the stats chosen in the player creation section.
