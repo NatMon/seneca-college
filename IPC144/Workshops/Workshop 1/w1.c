@@ -1,4 +1,4 @@
-// By: Natalia Monsalve
+// Name: Natalia Monsalve
 // w1.c
 
 #include <stdio.h>
