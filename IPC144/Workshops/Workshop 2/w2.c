@@ -1,6 +1,8 @@
 // Name: Natalia Monsalve
 // w2.c
 
+#include <stdio.h>
+
 int main(void)
 {
   float strength, speed, defense, intelligence = 0;
