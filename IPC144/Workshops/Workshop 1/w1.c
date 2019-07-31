@@ -1,4 +1,3 @@
-// Code Quest
 // By: Natalia Monsalve
 // w1.c
 
