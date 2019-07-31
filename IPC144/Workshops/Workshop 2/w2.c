@@ -21,7 +21,7 @@ int main(void)
   printf("Enter defense: ");
   scanf("%f", &defense);
   
-  printf("Enter intelligence");
+  printf("Enter intelligence: ");
   scanf("%f", &intelligence);
   
   printf("\n");
