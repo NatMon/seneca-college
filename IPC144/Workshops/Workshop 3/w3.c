@@ -7,7 +7,7 @@ int main(void)
 {
   float playerStrength = 10;
   float playerDefense = 20;
-  float player Intelligence = 40;
+  float playerIntelligence = 40;
   float playerHP = 10;
   
   float enemyStrength = 30;
@@ -26,7 +26,7 @@ int main(void)
     printf("1 - Attack\n");
     printf("2 - Magic\n");
     printf("Select your move: ");
-    scanf_s("%d", &move);
+    scanf("%d", &move);
     
     if (move == 1) {
       printf("You attacked the enemy!\n");
@@ -69,7 +69,7 @@ int main(void)
           printf("You died!\n");
         }
         else 
-          printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemy HP);
+          printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
       }
     }
   }
