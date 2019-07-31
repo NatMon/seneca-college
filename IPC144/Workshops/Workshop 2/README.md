@@ -59,7 +59,3 @@ If you have completed workshop 1, you may complete this section in order to merg
 Copy the source code from this workshop (excluding the main and braces) and open up your "codeQuest.c" file. Paste the copied source code into the code quest source file below the intro screen coponent within the main. If successful, the output of the program should have the intro screen and followed by the character creation section.
 
 Minor changes have been made to workshop 1, be sure to change the file accordingly.
-
-### SUBMISSION
-
-Upload your solution according to your instructor's guidelines.
