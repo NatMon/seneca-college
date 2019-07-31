@@ -23,7 +23,7 @@ int main(void)
   validate(1, 3);
   
   return 0;
-{
+}
 
 void clearScreen()
 {
@@ -33,7 +33,8 @@ void clearScreen()
   }
 }
 
-int validate(int low, int high) {
+int validate(int low, int high) 
+{
   int input;
   printf("Select: ");
   
