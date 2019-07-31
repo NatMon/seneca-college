@@ -19,7 +19,7 @@ int main(void)
   scanf("%f", &speed);
   
   printf("Enter defense: ");
-  scanf("%f", %defense);
+  scanf("%f", &defense);
   
   printf("Enter intelligence");
   scanf("%f", &intelligence);
