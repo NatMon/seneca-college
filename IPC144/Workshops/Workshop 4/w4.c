@@ -36,4 +36,32 @@ void clearScreen()
 int validate(int low, int high) {
   int input;
   printf("Select: ");
+  
+  do {
+    scanf("%d", &input);
+    if (input == low) {
+      void newGame();
+    }
+    else if (input > low && input < high) {
+      void load();
+    }
+    else if (input == high) {
+      printf("Good Bye!");
+    }
+    else {
+      printf("Invalid input, try again: ");
+    }
+  } while (input >= low && input <= high);
+  return input;
 }
+
+void newGame() {
+  printf("Not Implemented!");
+}
+  
+void load() {
+  printf("Not Implemented!");
+}
+
+ 
+  
