@@ -14,12 +14,12 @@ Upon successful completion of this workshop, you will be able to
 
 ### SPECIFICATIONS
 
-Each player has the following float attributes: _Strength_, _Speed_, _Defense_, _Intelligence_.  
-Also, each player has the following four float attribute ratio: _StrengthRatio_, _SpeedRatio_, _DefenseRatio_, _IntelligenceRatio_.  
+Each player has the following float attributes: _strength_, _speed_, _defense_, _intelligence_.  
+Also, each player has the following four float attribute ratio: _strengthRatio_, _speedRatio_, _defenseRatio_, _intelligenceRatio_.  
 In addition, each player has an integer variable _luck_.
 
 Write a program to 
-- Prompt the user to input the player's attributes: Strength, Speed, Defense, Intelligence
+- Prompt the user to input the player's attributes: strength, speed, defense, intelligence
 - Receive input from the user for each of the above attributes
 - Once all inputs are collected calculate the sum of all the attributes
 - Calculate ratios for each attribute by dividing each attribute with the sum of all attributes
