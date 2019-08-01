@@ -33,7 +33,7 @@ The output of a typical run-through of your program should look like this (user 
 Character Creation
 Please enter your desired stats for your character:
 
-Enter strength: 21
+Enter strength: <span style="color:green">21</span>
 Enter speed: 35
 Enter defense: 20
 Enter intelligence: 75
