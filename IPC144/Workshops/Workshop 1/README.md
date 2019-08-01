@@ -14,7 +14,7 @@ Login to your Matrix (matrix.senecac.on.ca) account via SSH using an SSH client 
 
 Once logged in, make a new directory for game called codeQuest and enter that directory. The commands below will accomplish this task:
 
-```c
+```
 mkdir codeQuest
 cd codeQuest
 ```
