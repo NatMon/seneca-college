@@ -11,7 +11,7 @@ int main(void)
   printf("|                       |\n");
   printf("+-----------------------+\n");
     
-  float strength, speed, defense, intelligence = 0;
+  float playerStrength, playerSpeed, playerDefense, playerIntelligence = 0;
   int sum, luck = 0;
   float strengthRatio, speedRatio, defenseRatio, intelligenceRatio = 0;
   
@@ -19,25 +19,25 @@ int main(void)
   printf("Please enter your desired stats for your character:\n\n");
   
   printf("Enter strength: ");
-  scanf("%f", &strength);
+  scanf("%f", &playerStrength);
   
   printf("Enter speed: ");
-  scanf("%f", &speed);
+  scanf("%f", &playerSpeed);
   
   printf("Enter defense: ");
-  scanf("%f", &defense);
+  scanf("%f", &playerDefense);
   
   printf("Enter intelligence: ");
-  scanf("%f", &intelligence);
+  scanf("%f", &playerIntelligence);
   
   printf("\n");
   
-  sum = strength + speed + defense + intelligence;
+  sum = playerStrength + playerSpeed + playerDefense + playerIntelligence;
   
-  strengthRatio = strength / sum * 100;
-  speedRatio = speed / sum * 100;
-  defenseRatio = defense / sum * 100;
-  intelligenceRatio = intelligence / sum * 100;
+  strengthRatio = playerStrength / sum * 100;
+  speedRatio = playerSpeed / sum * 100;
+  defenseRatio = playerDefense / sum * 100;
+  intelligenceRatio = playerIntelligence / sum * 100;
   
   printf("Your player's final states are:\n\n");
   
@@ -48,7 +48,74 @@ int main(void)
   
   luck = sum % 30;
   
-  printf("Luck: %d\n", luck);
+  printf("Luck: %d\n\n", luck);
   
+  float playerHP = 10;
+  
+  float enemyStrength = 30;
+  float enemyDefense = 40;
+  float enemyIntelligence = 25;
+  float enemyHP = 10;
+  
+  int move;
+  
+  float attackPower, magicPower;
+  
+  printf("Battle Start!\n");
+  printf("Your HP: %.0f Enemy HP: %.0f\n", playerHP, enemyHP);
+  
+  while (playerHP > 0 && enemyHP > 0) {
+    printf("1 - Attack\n");
+    printf("2 - Magic\n");
+    printf("Select your move: ");
+    scanf("%d", &move);
+    
+    if (move == 1) {
+      printf("You attacked the enemy!\n");
+      
+      attackPower = (playerStrength / enemyDefense) * 5;
+      enemyHP -= attackPower;
+      
+      if (enemyHP <= 0) {
+        printf("You won!\n");
+      }
+      else if (enemyHP > 0) {
+        printf("The enemy attacked you!\n");
+        
+        attackPower = (enemyStrength / playerDefense) * 5;
+        playerHP -= attackPower;
+        
+        if (playerHP <= 0) {
+          printf("You died!\n");
+        }
+        else {
+          printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+        }
+      }
+    }
+    else if (move == 2) {
+      printf("You shocked the enemy!\n");
+      
+      magicPower = (playerIntelligence / enemyIntelligence) * 5;
+      enemyHP -= magicPower;
+      
+      if (enemyHP <= 0) {
+        printf("You won!\n");
+      }
+      else if (enemyHP > 0) {
+        printf("The enemy attacked you!\n");
+        
+        attackPower = (enemyStrength / playerDefense) * 5;
+        playerHP -= attackPower;
+        
+        if (playerHP <= 0) {
+          printf("You died!\n");
+        }
+        else {
+          printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+        }
+      }
+    }
+  }
   return 0;
 }
