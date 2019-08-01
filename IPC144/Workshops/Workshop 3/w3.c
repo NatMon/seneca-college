@@ -46,8 +46,9 @@ int main(void)
         if (playerHP <= 0) {
           printf("You died!\n");
         }
-        else
+        else {
           printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+        }
       }
     }
     else if (move == 2) {
@@ -68,8 +69,9 @@ int main(void)
         if (playerHP <= 0) {
           printf("You died!\n");
         }
-        else 
+        else {
           printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+        }
       }
     }
   }
