@@ -1,6 +1,6 @@
 # Lab 1 - Intro Screen
 
-In this workshop, you will begin your development of a text based game **"Code Quest!"**. You will concentrate on writing source code for a very basic intro screen to your game and then you will compile and run it.
+In this workshop, you will begin your development of a text based game **"Code Quest!"**. You will concentrate on writing source code for a very basic intro screen to your game and then you will compile and run it on Matrix.
 
 ### LEARNING OUTCOMES
 
