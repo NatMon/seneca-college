@@ -10,7 +10,7 @@ Upon successful completion of this workshop, you will be able to
 
 ### SPECIFICATIONS
 
-Login to your Matrix (matrix.senecac.on.ca) accounts via SSH using and SSH client like putty. You will need a Matrix account before you are able to do this.
+Login to your Matrix (matrix.senecac.on.ca) accounts via SSH using an SSH client like putty. You will need a Matrix account before you are able to do this.
 
 Once logged in, make a new directory for game called codeQuest and enter that directory. The commands below will accomplish this task:
 
