@@ -32,7 +32,7 @@ In this lab you are going to create a program "w3.c", you are going to simulate 
 
 The output of two sample runs look like this (user input highlighted in bold):
 
-You may assume that the user enters valid numbers. If your program's output exactly matches the output shown above, given the provided inputs, then your lab is complete and ready to be submitted (read below).
+You may assume that the user enters valid numbers. If your program's output exactly matches the output shown below, given the provided inputs, then your lab is complete and ready to be submitted.
 
 **Sample 1:**
 
