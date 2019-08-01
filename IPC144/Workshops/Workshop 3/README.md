@@ -12,7 +12,7 @@ Upon successful completion of this workshop, you will be able to
 ### PART 1:
 ### SPECIFICATIONS
 
-In this lab you are going to create a program `w3.c`, you are going to simulate a battle between a player and an enemy.
+In this lab you are going to create a program "w3.c", you are going to simulate a battle between a player and an enemy.
 - Create player stat variables for Strength, Defense, Intelligence, and HP and initialize them as 10, 20, 40, and 10 respectively.
 - Create enemy stat variables for Strength, Defense, Intelligence, and HP and initialize them as 30, 40, 25, and 10 respectively.
 - Display "**Battle Start!**" and begin the battle sequence (below).
