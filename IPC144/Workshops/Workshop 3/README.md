@@ -13,10 +13,10 @@ Upon successful completion of this workshop, you will be able to
 ### SPECIFICATIONS
 
 In this lab you are going to create a program "w3.c", you are going to simulate a battle between a player and an enemy.
-- Create player stat variables for `strength`, `defense`, `intelligence`, and `HP` and initialize them as 10, 20, 40, and 10 respectively.
-- Create enemy stat variables for `strength`, `defense`, `intelligence`, and `HP` and initialize them as 30, 40, 25, and 10 respectively.
-- Display "**Battle Start!**" and begin the battle sequence (below).
-- Display to the user the current `HP` of the player and the enemy.
+- Create player stat variables for `strength`, `defense`, `intelligence`, and `HP` and initialize them as 10, 20, 40, and 10 respectively
+- Create enemy stat variables for `strength`, `defense`, `intelligence`, and `HP` and initialize them as 30, 40, 25, and 10 respectively
+- Display "**Battle Start!**" and begin the battle sequence (below)
+- Display to the user the current `HP` of the player and the enemy
 - Display a menu to the user with the attack options and accept the input from user (either '1' or '2')
 - Option 1: If the user selects '1' (attack):
   - `attack power`: Calculate the attack power by dividing the `strength` of the player by the `defense` of the enemy
@@ -25,10 +25,10 @@ In this lab you are going to create a program "w3.c", you are going to simulate 
 -Option 2: If the user selects '2' (magic):
   - `magic power`: Calculate the magic power by dividing the `intelligence` of the player by the `intelligence` of the enemy
   - Multiply the calculated `magic power` by 5 and reduce the enemy's `HP` by that amount, truncating `HP` to a whole number
-- If the enemy's HP is zero or less, indicate to the user that they won, if not the enemy attacks the player (follow the attack process above, swap the enemy and player).
-- If the player's HP is zero or less, indicate to the user that they have lost.
-- Repeat the above battle sequence until one either the player or the enemy have run out of HP.
-- Once the battle has been decided, the program exits.
+- If the enemy's HP is zero or less, indicate to the user that they won, if not the enemy attacks the player (follow the attack process above, swap the enemy and player)
+- If the player's HP is zero or less, indicate to the user that they have lost
+- Repeat the above battle sequence until one either the player or the enemy have run out of HP
+- Once the battle has been decided, the program exits
 
 The output of two sample runs look like this (user input highlighted in green):
 
