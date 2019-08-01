@@ -29,7 +29,7 @@ Write a program to
 
 The output of a typical run-through of your program should look like this (user input highlighted in green):
 
-```c
+```
 Character Creation
 Please enter your desired stats for your character:
 
