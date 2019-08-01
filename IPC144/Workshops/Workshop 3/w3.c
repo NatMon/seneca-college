@@ -35,7 +35,7 @@ int main(void)
       enemyHP = enemyHP - attackPower;
       
       if (enemyHP <= 0) {
-        printf("You Won!\n");
+        printf("You won!\n");
       }
       else if (enemyHP > 0) {
         printf("The enemy attacked you!\n");
@@ -57,7 +57,7 @@ int main(void)
       enemyHP = enemyHP - magicPower;
       
       if (enemyHP <= 0) {
-        printf("You Won\n");
+        printf("You won!\n");
       }
       else if (enemyHP > 0) {
         printf("The enemy attacked you!\n");
