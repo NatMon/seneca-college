@@ -34,7 +34,7 @@ Character Creation
 Please enter your desired stats for your character:
 
 Enter strength: <b>21</b>
-Enter speed: 35
+Enter speed: <span style="color:blue">35</span>
 Enter defense: 20
 Enter intelligence: 75
 
