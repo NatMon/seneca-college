@@ -19,7 +19,7 @@ int main(void)
   
   float attackPower, magicPower;
   
-  printf("Battle Start\n");
+  printf("Battle Start!\n");
   printf("Your HP: %.0f Enemy HP: %.0f\n", playerHP, enemyHP);
   
   while (playerHP > 0 && enemyHP > 0) {
