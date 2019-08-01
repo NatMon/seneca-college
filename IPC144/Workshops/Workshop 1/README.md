@@ -1,11 +1,11 @@
 # Lab 1 - Intro Screen
 
-In this workshop, you will begin your development of a text based game **"Code Quest!"**. You will concentrate on writing source code for a very basic intro screen to your game and then you will compile and run it on Matrix.
+In this workshop, you will begin your development of a text based game **"Code Quest!"**. You will concentrate on writing source code for a very basic intro screen to your game and then you will compile and run it.
 
 ### LEARNING OUTCOMES
 
 Upon successful completion of this workshop, you will be able to 
-- use operating system utilities to edit, compile, and arun programs on a variety of platforms 
+- use operating system utilities to edit, compile, and run programs on a variety of platforms 
 - transfer source code between a local compyter and a remote one
 
 ### SPECIFICATIONS
