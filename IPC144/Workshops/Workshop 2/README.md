@@ -29,7 +29,7 @@ Write a program to
 
 The output of a typical run-through of your program should look like this (user input highlighted in green):
 
-```
+<pre><code>
 Character Creation
 Please enter your desired stats for your character:
 
@@ -45,7 +45,7 @@ Speed: 23
 Defense: 13
 Intelligence: 49
 Luck: 1
-```
+</code></pre>
 
 You may assume that the user enters valid numbers. If your program's output exactly matches the output shown above, given the provided inputs, then part 1 is complete and you are ready to do part 2.
 
