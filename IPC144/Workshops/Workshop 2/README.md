@@ -27,16 +27,16 @@ Write a program to
 - Calculate the player's luck stat by finding the remainder of the sum divided by 30 (use modulus operator)
 - Display to the user the finalized player stats
 
-The output of a typical run-through of your program should look like this (user input highlighted in green):
+The output of a typical run-through of your program should look like this (user input highlighted in bold):
 
 <pre>
 Character Creation
 Please enter your desired stats for your character:
 
 Enter strength: <b>21</b>
-Enter speed: <span style="color:blue">35</span>
-Enter defense: 20
-Enter intelligence: 75
+Enter speed: <b>35</b>
+Enter defense: <b>20</b>
+Enter intelligence: <b>75</b>
 
 Your player's final states are:
 
