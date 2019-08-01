@@ -88,6 +88,58 @@ int add_item(int id[], int quantity[], int size, int item)
   index_or_notFound = find_item(id, size, item);
   
   if (index_or_notFound != -1) {
-    
+    quantity[index_or_notFound] += 1;
+    return 1;
+  }
+  else if (index_or_notFound == -1) {
+    for (i = 0; i < size && stop == 0; i++) {
+      if (quantity[i] == 0) {
+        id[i] = item;
+        quantity[i] = 1;
+        stop = 1;
+        return 1;
+      }
+    }
+    for (i = 0; i < size; i++) {
+      if (quantity[i] != 0) {
+        printf("Inventory is already full!\n\n");
+        return 0;
+      }
+    }
+  }
+}
+
+int use_item(int id[], int quantity[], int size, int item) 
+{
+  int i;
+  for (i = 0; i < size; i++) {
+    if (id[i] == item) {
+      if (quantity[i] > 0) {
+        quantity[i] -= 1;
+        return 1;
+      }
+      else {
+        return 0;
+      }
+    }
+  }
+}
+
+void print_item(int item) 
+{
+  if (item == 0) {
+    printf("Potion X");
+  }
+  else if (item == 1) {
+    printf("HP Booster X");
+  }
+  else if (item == 2) {
+    printf("Strength Booster X"); 
+  }
+  else if (item == 3) {
+    printf("Defense Booster X");
+  }
+  else if (item == 4) {
+    printf("Intelligence Booster X");
   }
 }
