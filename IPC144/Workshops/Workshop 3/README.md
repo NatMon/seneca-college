@@ -70,7 +70,7 @@ Your HP: 2 Enemy HP: 2
 2 - Magic
 Select your move: <b>2</b>
 You shocked the enemy!
-You Won!
+You won!
 </pre>
 
 ### PART 2 (BONUS):
