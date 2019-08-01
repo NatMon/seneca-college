@@ -1,4 +1,4 @@
-# Lab 3 - Battle Scene - Logics
+# Lab 3 - Battle Scene (Logics)
 
 In this workshop, we will continue our development of a text based game "Code Quest!". This workshop focuses on retrieving input from the user, selecting from multiple logic paths based on user input and looping until some kind of condition is met.
 
