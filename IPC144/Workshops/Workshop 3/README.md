@@ -25,9 +25,9 @@ In this lab you are going to create a program "w3.c", you are going to simulate 
 - Option 2: If the user selects '2' (magic):
   - `magic power`: Calculate the magic power by dividing the `intelligence` of the player by the `intelligence` of the enemy
   - Multiply the calculated `magic power` by 5 and reduce the enemy's `HP` by that amount, truncating `HP` to a whole number
-- If the enemy's HP is zero or less, indicate to the user that they won, if not the enemy attacks the player (follow the attack process above, swap the enemy and player)
-- If the player's HP is zero or less, indicate to the user that they have lost
-- Repeat the above battle sequence until one either the player or the enemy have run out of HP
+- If the enemy's `HP` is zero or less, indicate to the user that they won, if not the enemy attacks the player (follow the attack process above, swap the enemy and player)
+- If the player's `HP` is zero or less, indicate to the user that they have lost
+- Repeat the above battle sequence until one either the player or the enemy have run out of `HP`
 - Once the battle has been decided, the program exits
 
 The output of two sample runs look like this (user input highlighted in green):
