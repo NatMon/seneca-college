@@ -1,4 +1,4 @@
-# LAB 2 - Computations
+# Lab 2 - Computations
 
 In this workshop, you will continue your development of a text based game "Code Quest!". This workshop focuses on retrieving input from the user, use of different variable types and executing basic arithmetic calculations.
 
