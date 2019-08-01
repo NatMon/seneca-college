@@ -5,7 +5,7 @@
 
 int main(void)
 {
-  float strength, speed, defense, intelligence = 0;
+  float playerStrength, playerSpeed, playerDefense, playerIntelligence = 0;
   int sum, luck = 0;
   float strengthRatio, speedRatio, defenseRatio, intelligenceRatio = 0;
   
@@ -13,25 +13,25 @@ int main(void)
   printf("Please enter your desired stats for your character:\n\n");
   
   printf("Enter strength: ");
-  scanf("%f", &strength);
+  scanf("%f", &playerStrength);
   
   printf("Enter speed: ");
-  scanf("%f", &speed);
+  scanf("%f", &playerSpeed);
   
   printf("Enter defense: ");
-  scanf("%f", &defense);
+  scanf("%f", &playerDefense);
   
   printf("Enter intelligence: ");
-  scanf("%f", &intelligence);
+  scanf("%f", &playerIntelligence);
   
   printf("\n");
   
-  sum = strength + speed + defense + intelligence;
+  sum = playerStrength + playerSpeed + playerDefense + playerIntelligence;
   
-  strengthRatio = strength / sum * 100;
-  speedRatio = speed / sum * 100;
-  defenseRatio = defense / sum * 100;
-  intelligenceRatio = intelligence / sum * 100;
+  strengthRatio = playerStrength / sum * 100;
+  speedRatio = playerSpeed / sum * 100;
+  defenseRatio = playerDefense / sum * 100;
+  intelligenceRatio = playerIntelligence / sum * 100;
   
   printf("Your player's final states are:\n\n");
   
