@@ -32,7 +32,7 @@ int main(void)
       printf("You attacked the enemy!\n");
       
       attackPower = (playerStrength / enemyDefense) * 5;
-      enemyHP = enemyHP - attackPower;
+      enemyHP -= attackPower;
       
       if (enemyHP <= 0) {
         printf("You won!\n");
@@ -41,7 +41,7 @@ int main(void)
         printf("The enemy attacked you!\n");
         
         attackPower = (enemyStrength / playerDefense) * 5;
-        playerHP = playerHP - attackPower;
+        playerHP -= attackPower;
         
         if (playerHP <= 0) {
           printf("You died!\n");
@@ -55,7 +55,7 @@ int main(void)
       printf("You shocked the enemy!\n");
       
       magicPower = (playerIntelligence / enemyIntelligence) * 5;
-      enemyHP = enemyHP - magicPower;
+      enemyHP -= magicPower;
       
       if (enemyHP <= 0) {
         printf("You won!\n");
@@ -64,7 +64,7 @@ int main(void)
         printf("The enemy attacked you!\n");
         
         attackPower = (enemyStrength / playerDefense) * 5;
-        playerHP = playerHP - attackPower;
+        playerHP -= attackPower;
         
         if (playerHP <= 0) {
           printf("You died!\n");
