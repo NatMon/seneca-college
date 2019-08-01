@@ -47,7 +47,7 @@ int main(void)
           printf("You died!\n");
         }
         else {
-          printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+          printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
         }
       }
     }
@@ -70,7 +70,7 @@ int main(void)
           printf("You died!\n");
         }
         else {
-          printf("Your HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
+          printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
         }
       }
     }
