@@ -30,7 +30,7 @@ In this lab you are going to create a program "w3.c", you are going to simulate 
 - Repeat the above battle sequence until one either the player or the enemy have run out of `HP`
 - Once the battle has been decided, the program exits
 
-The output of two sample runs look like this (user input highlighted in green):
+The output of two sample runs look like this (user input highlighted in bold):
 
 You may assume that the user enters valid numbers. If your program's output exactly matches the output shown above, given the provided inputs, then your lab is complete and ready to be submitted (read below).
 
