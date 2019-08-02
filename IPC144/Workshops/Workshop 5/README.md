@@ -12,7 +12,7 @@ Upon successful completion of this workshop, you will be able to
 
 ### SPECIFICATIONS
 
-Write a program which will act as an overworld for Code Quest! It will track the number of days remaining (before the destruction of th e world) and the player's HP.
+Write a program which will act as an overworld for Code Quest! It will track the number of days remaining (before the destruction of the world) and the player's HP.
 
 This program will require the following 3 functions:
 
