@@ -18,7 +18,7 @@ This program will require the following 3 functions:
 
 `void rest_at_inn(float* days_remaining, int* hp_remaining, int max)`: This function takes three arguments: a float address (days remaining), an int address (HP remaining), and an int (max HP). This function refills the player's HP to its maximum value and decreases the number of days remaining by one. Print a message indicating what has been done (check output below).
 
-`void train(float* days_remaining, int* hp_remaining, int* experience)`: This function takes three arguments: a float address (days remaining), an int address (HP remaining), and an int address (Player Experience). This function increases the player's experience by 10 but reduces HP by 2 and reduces the number of days remaining by 0.5. This function prints a message indicating what has been done (check output below).
+`void train(float* days_remaining, int* hp_remaining, int* experience)`: This function takes three arguments: a float address (days remaining), an int address (HP remaining), and an int address (player experience). This function increases the player's experience by 10 but reduces HP by 2 and reduces the number of days remaining by 0.5. This function prints a message indicating what has been done (check output below).
 
 `void battle_demon_lord(int* current_hp)`: This function takes one argument: an int address (current HP). This function simply outputs "He's too strong!" and sets the player's current HP to zero. This function will be more correctly filled in later in the semester, it will act as the final battle in the game.
 
