@@ -71,5 +71,5 @@ If you have completed all previous game labs, you may complete this section in o
 
 - Copy the functions (and prototypes) into your codeQuest source code file
 - Copy the main code from this lab and paste it directly below code quest intro banner (before character creation)
-- Move the character creation and battle scene code from the main and place it in the new game function, replacing the "not implemented" print statement
+- Move the character creation and battle scene code from the main and place it in the new game function, replacing the "Not implemented!" print statement
 - Clear the screen before the character creation section begins
