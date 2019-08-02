@@ -15,9 +15,9 @@ int main(void)
   float enemyIntelligence = 25;
   float enemyHP = 10;
   
-  int move;
+  int move = 0;
   
-  float attackPower, magicPower;
+  float attackPower, magicPower = 0;
   
   printf("Battle Start!\n");
   printf("Your HP: %.0f Enemy HP: %.0f\n", playerHP, enemyHP);
