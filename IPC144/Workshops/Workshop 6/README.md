@@ -33,32 +33,32 @@ The output of a typical run-through of your program should look like this (user'
 <pre>
 Enemy Generator
 
-Level        - 3
-HP           - 1
-Strength     - 1
-Speed        - 2
-Defense      - 4
-Intelligence - 3
+ Level         - 3
+ HP            - 1
+ Strength      - 1
+ Speed         - 2
+ Defense       - 4
+ Intelligence  - 3
 
 Generate Another? <b>1</b>
 
-Level        - 20
-HP           - 40
-Strength     - 200
-Speed        - 160
-Defense      - 120
-Intelligence - 60
+ Level         - 20
+ HP            - 40
+ Strength      - 200
+ Speed         - 160
+ Defense       - 120
+ Intelligence  - 60
 
 Generate Another? <b>RB23214L</b>
 Invalid Input <b>4</b>
 Invalid Input <b>1</b>
 
-Level        - 12
-HP           - 14
-Strength     - 28
-Speed        - 64
-Defense      - 21
-Intelligence - 72
+ Level         - 12
+ HP            - 14
+ Strength      - 28
+ Speed         - 64
+ Defense       - 21
+ Intelligence  - 72
 
 Generate Another? <b>2</b>
 </pre>
