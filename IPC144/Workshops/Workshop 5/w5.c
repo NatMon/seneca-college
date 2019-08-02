@@ -52,16 +52,16 @@ void rest_at_inn(float* days_remaining, int* hp_remaining, int max)
   printf("You rested up at the inn\n\n");
   
   *hp_remaining = max;
-  *days_remaining = *days_remaining - 1;
+  *days_remaining -= - 1;
 }
 
 void train(float* days_remaining, int* hp_remaining, int* experience) 
 {
   printf("You did some training!\n\n");
   
-  *experience = *experience + 10;
-  *hp_remaining = *hp_remaining -2;
-  *days_remaining = *days_remaining - 0.5;
+  *experience += 10;
+  *hp_remaining -= 2;
+  *days_remaining -= 0.5;
 }
 
 void battle_demon_lord(int* current_hp)
