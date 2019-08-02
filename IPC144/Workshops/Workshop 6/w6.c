@@ -29,9 +29,9 @@ int main(void)
     printf(" Strength\t- %.0f\n", getRandom(0.15, 0.5) * level * level);
     printf(" Speed\t\t- %.0f\n", getRandom(0.15, 0.5) * level * level);
     printf(" Defense\t- %.0f\n", getRandom(0.15, 0.5) * level * level);
-    printf("Intelligence\t- %.0f\n\n", getRandom(0.15, 0.5) * level * level);
+    printf(" Intelligence\t- %.0f\n\n", getRandom(0.15, 0.5) * level * level);
     
-    printf(" Generate Another? ");
+    printf("Generate Another? ");
     do {
       input = 0;
       rc = scanf("%d%c", &input, &after);
