@@ -11,6 +11,7 @@ void load();
 void rest_at_inn(float* days_remaining, int* hp_remaining, int max);
 void train(float* days_remaining, int* hp_remaining, int* experience);
 void battle_demon_lord(int* current_hp);
+void battleSequence(float* days, int* curHP, int* exp, int maxHP, int str, int def, int intel, int luck);
 
 bool flag = false;
 
@@ -206,4 +207,8 @@ void battle_demon_lord(int* current_hp)
   *current_hp = 0;
   printf("He's too strong!\n");
   printf("\nGame Over!\n");
+}
+
+void battleSequence(float* days, int* curHP, int* exp, int maxHP, int str, int def, int intel, int luck)
+{
 }
