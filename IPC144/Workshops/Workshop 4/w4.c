@@ -10,18 +10,19 @@ void load();
 
 int main(void) 
 {
-  int input;
+  int input = 0;
   
   clearScreen();
   
-  printf("--Main Menu--\n\n");
-  
-  printf("1 - New Game\n");
-  printf("2 - Load Game\n");
-  printf("3 - Exit\n\n");
-  
-  validate(1, 3);
-  
+  do {
+    printf("--Main Menu--\n\n");
+      
+    printf("1 - New Game\n");
+    printf("2 - Load Game\n");
+    printf("3 - Exit\n\n");
+      
+    input = validate(1, 3);
+  } while (input != 3);
   return 0;
 }
 
@@ -35,9 +36,9 @@ void clearScreen()
 
 int validate(int low, int high) 
 {
-  int input;
-  printf("Select: ");
+  int input = 0;
   
+  printf("Select: ");
   do {
     scanf("%d", &input);
     if (input == low) {
@@ -57,12 +58,9 @@ int validate(int low, int high)
 }
 
 void newGame() {
-  printf("Not Implemented!");
+  printf("Not Implemented!\n\n");
 }
   
 void load() {
-  printf("Not Implemented!");
+  printf("Not Implemented!\n\n");
 }
-
- 
-  
