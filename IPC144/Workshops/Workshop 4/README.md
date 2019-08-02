@@ -59,7 +59,7 @@ Not Implemented!
 3 - Exit
 Select: <b>3</b>
 Good Bye!
-<pre>
+</pre>
 
 If your program's output exactly matches the output shown above, given the provided inputs, then your lab is complete and ready to be submitted (read below).
 
