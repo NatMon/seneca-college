@@ -18,7 +18,7 @@ int main(void)
   printf("Days remaining: %.1f HP: %d EXP: %d\n\n", daysRem, HP, playerExp);
   
   do {
-    printf("1 - Rest at Inn\n\n");
+    printf("1 - Rest at Inn\n");
     printf("2 - Train\n");
     printf("3 - Fight the Demon Lord\n");
     printf("4 - Quit Game\n\n");
