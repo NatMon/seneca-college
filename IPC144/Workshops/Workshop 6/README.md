@@ -21,7 +21,7 @@ Write a program that acts as an enemy generator for Code Quest! This program gen
 `void clearInputBuffer()`: This function continuously consumes characters in the input buffer until it consumes a newline character. This function is used when the user has entered an invalid input and the buffer must be cleared before normal operations can be resumed. This function receives no parameters and returns nothing.
 
 Once the above three functions are implemented, follow the following steps to write a program that randomly generates a collection of enemy stats and displays them to the user.
-1. When the program starts, it calls the SeedRandom function to prepare the generator
+1. When the program starts, it calls the seedRandom function to prepare the generator
 2. The program then calls the getRandom function to generated four random ratio values for each of the following stats: strengthRatio, speedRatio, defenseRatio, and intelligenceRatio. The ratio values must be between 0.15 and 0.5
 3. The program then calls the getRandom function to generate a random value between 0.5 and 2.0 as the HP ratio
 4. Finally, the program will randomly determine the level of the enemy between 3 and 20.
