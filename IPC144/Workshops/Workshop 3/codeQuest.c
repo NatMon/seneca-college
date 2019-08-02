@@ -54,9 +54,7 @@ int main(void)
   printf("Defense: %d\n", (int)defenseRatio);
   printf("Intelligence: %d\n", (int)intelligenceRatio);  
   printf("Luck: %d\n\n", luck);
-  
-  
-  
+    
   printf("Battle Start!\n");
   printf("Your HP: %.0f Enemy HP: %.0f\n", playerHP, enemyHP);
   
