@@ -20,10 +20,10 @@ Application Features:
 2. You are allowed to ce additional functions
 3. You must document (i.e. comments and indentation) your code properly
 4. You must put the following statement (as a comment) at the beginning of your source code:
-
+```
 I declare that the attached assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students.
 
 Name _____________________________________    Student ID ______________________
-
+```
 5. You must use blank lines to separate logical units int he source code
 6. You are not allowed to declare global variables
