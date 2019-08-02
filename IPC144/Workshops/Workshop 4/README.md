@@ -16,7 +16,7 @@ Upon successful completion of this workshop, you will be able to
 Write a program that contains a series of utilities for Code Quest! The program requires the following four functions:
 
 - `void clearScreen()`: This is the clear screen function. This simple function prints out 40 newlines to clear the screen. It requires no parameters and returns nothing.
-- `int validate(int low, int high)`: This is the validtae function. This function prompts the user to input an integer. This function verifies that the integer is within a specified range (low and high), if not, the function displays a warning and prompts the user again. This function requires 2 parameters (low and high range) and returns the validated input from the user. You can assume the user will only enter numbers.
+- `int validate(int low, int high)`: This is the validate function. This function prompts the user to input an integer. This function verifies that the integer is within a specified range (low and high), if not, the function displays a warning and prompts the user again. This function requires 2 parameters (low and high range) and returns the validated input from the user. You can assume the user will only enter numbers.
 - `void newGame()`: This is the new game function. This is a placeholder function for a later lab. This function displays the message "Not Implemented!". The functions requires no parameters and returns nothing.
 - `void load()`: This is the load function. This is a placeholder function for a later lab. This function displays the message "Not Implemented!". The function requires no parameters and returns nothing.
 
