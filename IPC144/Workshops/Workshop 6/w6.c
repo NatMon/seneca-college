@@ -37,15 +37,15 @@ int main(void)
       rc = scanf("%d%c", &input, &after);
       
       if (rc != 2) {
-        printf(" Invalid Input1 ");
+        printf(" Invalid Input ");
         clearInputBuffer();
       }
       else if (after != '\n') {
-        printf(" Invalid Input2 ");
+        printf(" Invalid Input ");
         clearInputBuffer();
       }
       else if (input < 1 || input > 2) {
-        printf(" Invalid Input3 ");
+        printf(" Invalid Input ");
       }
     } while (input != 1 && input != 2);
   } while (input == 1);
