@@ -5,6 +5,7 @@ In this workshop, we will continue our development of a text based game "Code Qu
 ### LEARNING OUTCOMES
 
 Upon successful completion of this workshop, you will be able to 
+
 - Write menus to interact with the user
 - Use user input to determine which conditional path to use
 - Use loops to repeat a set of operations until a goal is complete
