@@ -8,6 +8,9 @@ void clearScreen();
 int validate(int low, int high);
 void newGame();
 void load();
+void rest_at_inn(float* days_remaining, int* hp_remaining, int max);
+void train(float* days_remaining, int* hp_remaining, int* experience);
+void battle_demon_lord(int* current_hp);
 
 bool flag = false;
 
