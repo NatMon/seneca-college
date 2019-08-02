@@ -38,7 +38,7 @@ int main(void)
       battle_demon_lord(&HP);
     }
     else if (input == 4) {
-      printf("Game Over!\n");
+      printf("\nGame Over!\n");
     }
   } while (input != 4 && HP > 0);
   return 0;
@@ -68,4 +68,5 @@ void battle_demon_lord(int* current_hp)
 {
   *current_hp = 0;
   printf("He's too strong!\n");
+  printf("\nGame Over!\n");
 }
