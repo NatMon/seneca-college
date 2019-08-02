@@ -41,10 +41,10 @@ int validate(int low, int high)
   do {
     scanf("%d", &input);
     if (input == low) {
-      void newGame();
+      newGame();
     }
     else if (input > low && input < high) {
-      void load();
+      load();
     }
     else if (input == high) {
       printf("Good Bye!");
@@ -52,7 +52,7 @@ int validate(int low, int high)
     else {
       printf("Invalid input, try again: ");
     }
-  } while (input >= low && input <= high);
+  } while (input < low || input > high);
   return input;
 }
 
