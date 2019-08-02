@@ -69,7 +69,7 @@ If your program's output exactly matches the output shown above, given the provi
 
 If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs.
 
-- Copy the functions (and prototypes) into your codeQuest source code file
+- Copy the functions (and prototypes) into your "codeQuest.c" file
 - Copy the main code from this lab and paste it directly below code quest intro banner (before character creation)
 - Move the character creation and battle scene code from the main and place it in the new game function, replacing the "Not implemented!" print statement
 - Clear the screen before the character creation section begins
