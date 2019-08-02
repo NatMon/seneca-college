@@ -12,7 +12,7 @@ int main(void)
 {
   int input;
   
-  void clearScreen();
+  clearScreen();
   
   printf("--Main Menu--\n\n");
   
