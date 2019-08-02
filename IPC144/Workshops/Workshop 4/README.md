@@ -22,9 +22,9 @@ Write a program that contains a series of utilities for Code Quest! The program 
 
 Once the above four functions are implemented, write a program to
 
-- Call clearScreen function to clear the screen.
+- Call `clearScreen` function to clear the screen.
 - Display a menu to the user. The menu will allow the user to select either "1 - New Game", "2 - Load Game", "3 - Exit".
-- Call the validate function to prompt the user for input, and validate the user's input. Note that the user's input must be within the range 1 and 3.
+- Call the `validate` function to prompt the user for input, and validate the user's input. Note that the user's input must be within the range 1 and 3.
 - Selecting New Game or Load Game calls their associated functions.
 - The program only exits when the user selects Exit on the menu screen (looping required).
 
