@@ -2,11 +2,14 @@
 // codeQuest.c
 
 #include <stdio.h>
+#include <stdbool.h>
 
 void clearScreen();
 int validate(int low, int high);
 void newGame();
 void load();
+
+bool flag = false;
 
 int main(void)
 {
@@ -26,7 +29,7 @@ int main(void)
     printf("3 - Exit\n\n");
       
     input = validate(1, 3);
-  } while (input != 3);  
+  } while (input != 3 && flag == false);  
   return 0;
 }
 
@@ -126,6 +129,7 @@ void newGame()
       
       if (enemyHP <= 0) {
         printf("You won!\n");
+        flag = true;
       }
       else if (enemyHP > 0) {
         printf("The enemy attacked you!\n");
@@ -135,6 +139,7 @@ void newGame()
         
         if (playerHP <= 0) {
           printf("You died!\n");
+          flag = true;
         }
         else {
           printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
@@ -149,6 +154,7 @@ void newGame()
       
       if (enemyHP <= 0) {
         printf("You won!\n");
+        flag = true;
       }
       else if (enemyHP > 0) {
         printf("The enemy attacked you!\n");
@@ -158,6 +164,7 @@ void newGame()
         
         if (playerHP <= 0) {
           printf("You died!\n");
+          flag = true;
         }
         else {
           printf("\nYour HP: %d Enemy HP: %d\n", (int)playerHP, (int)enemyHP);
