@@ -23,7 +23,7 @@ Write a program that acts as an enemy generator for Code Quest! This program gen
 Once the above three functions are implemented, follow the following steps to write a program that randomly generates a collection of enemy stats and displays them to the user.
 1. When the program starts, it calls the `seedRandom` function to prepare the generator
 2. The program then calls the `getRandom` function to generate four random ratio values for each of the following stats: strengthRatio, speedRatio, defenseRatio, and intelligenceRatio. The ratio values must be between 0.15 and 0.5
-3. The program then calls the getRandom function to generate a random value between 0.5 and 2.0 as the HP ratio
+3. The program then calls the `getRandom` function to generate a random value between 0.5 and 2.0 as the HP ratio
 4. Finally, the program will randomly determine the level of the enemy between 3 and 20.
 5. To determine the final stats of the enemy, multiply each stat ratio with the squared value of the level, truncate the final value, and store the result. The HP stat should simply be calculated by multiplying the HP ratio with the level of the enemy, truncating the final value. For example, given _Level = 12_ and _Strength Ratio = 0.3_, _Strength stat = 0.3 * 12 * 12 = 43).
 6. Display the finalized stats to the user and prompt the user if they would like to generate another enemy (1 - Yes, 2 - No). If the user enters anything but 1 or 2, clear the input buffer and prompt them again.
