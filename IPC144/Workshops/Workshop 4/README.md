@@ -28,18 +28,18 @@ Once the above four functions are implemented, write a program to
 - Selecting New Game or Load Game calls their associated functions.
 - The program only exits when the user selects Exit on the menu screen (looping required).
 
-The output of a typical run-through of your program should look like this (user input highlighted in green).
+The output of a typical run-through of your program should look like this (user input highlighted in bold).
 
-```
+<pre>
 --Main Menu--
 
 1 - New Game
 2 - Load Game
 3 - Exit
 
-Select: 6
-Invalid input, try again: 0
-Invalid input, try again: 1
+Select: <b>6</b>
+Invalid input, try again: <b>0</b>
+Invalid input, try again: <b>1</b>
 Not Implemented!
 
 --Main Menu--
@@ -48,8 +48,8 @@ Not Implemented!
 2 - Load Game
 3 - Exit
 
-Select: 5
-Invalid input, try again: 2
+Select: <b>5</b>
+Invalid input, try again: <b>2</b>
 Not Implemented!
 
 --Main Menu--
@@ -57,9 +57,9 @@ Not Implemented!
 1 - New Game
 2 - Load Game
 3 - Exit
-Select: 3
+Select: <b>3</b>
 Good Bye!
-```
+<pre>
 
 If your program's output exactly matches the output shown above, given the provided inputs, then your lab is complete and ready to be submitted (read below).
 
