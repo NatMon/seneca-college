@@ -82,4 +82,8 @@ Copy the functions (and prototypes) into your codeQuest source code file. Make a
 
 `void battleSequence(float* days, int* curHP, int* exp, int maxHP, int str, int def, int intel, int luck)`
 
-Move all source code 
+Move all source code for the battle sequence to this function, adjust it as needed to make use of the parameter values. Enemy stats are not passed in, they should remain hard coded for now. For each round of the battle, reduce the day's value by 0.1. If the player wins, increase their experience by the original health of the enemy (10).
+
+Move the main code from this lab into the newGame function where the battle code used to be, just after character creation. A new variable will need to be added to differentiate currentHP and maxHP. Add another option called "Fight Monster" which when selected calls the battle scene function, passing in the required variables. Use the input verification function from the the previous lab to replace the menu input in this lab. Clear the screen before the overworld menu displays each time, add pauses (wait for the user to press enter) where appropriate so the messages don't disappear immediately.
+
+If you've followed all instructions up to this point, you should be half done Code Quest! 
