@@ -57,5 +57,3 @@ You may assume that the user enters valid numbers. If your program's output exac
 If you have completed workshop 1, you may complete this section in order to merge your current workshop with your previous workshop.
 
 Copy the source code from this workshop (excluding the main and braces) and create and open up a "codeQuest.c" file. Paste the copied source code into the code quest source file below the intro screen component within the main. If successful, the output of the program should have the intro screen and followed by the character creation section.
-
-Minor changes have been made to workshop 1, be sure to change the file accordingly.
