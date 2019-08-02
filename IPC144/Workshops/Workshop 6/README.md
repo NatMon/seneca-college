@@ -14,11 +14,11 @@ Upon successful completion of this workshop, you will be able to
 
 Write a program that acts as an enemy generator for Code Quest! This program generates unique random enemy stats for each enemy encounter. This program also features more advanced input verifications that will be used to further develop the game. This program will require the following three functions:
 
-void SeedRandom(): This function seeds the C random number generator with the current time of the system (to ensure unique numbers between program executions). This function receives no parameters and returns nothing.
+`void SeedRandom()`: This function seeds the C random number generator with the current time of the system (to ensure unique numbers between program executions). This function receives no parameters and returns nothing.
 
-float GetRandom(float low, float high): This function returns a randomly generated value that is between two values low and high. This function accepts two floats (high and low rangwe) as parameters and returns a float.
+`float GetRandom(float low, float high)`: This function returns a randomly generated value that is between two values low and high. This function accepts two floats (high and low rangwe) as parameters and returns a float.
 
-void ClearInputBuffer(): This function continuously consumes characters in the input buffer until it consumes a newline character. This function is used when the user has entered an invalid input and the buffer must be cleared before normal operations can be resumed. This function receives no parameters and returns nothing.
+`void ClearInputBuffer()`: This function continuously consumes characters in the input buffer until it consumes a newline character. This function is used when the user has entered an invalid input and the buffer must be cleared before normal operations can be resumed. This function receives no parameters and returns nothing.
 
 Once the above three functions are implemented, follow the following steps to write a program that randomly generates a collection of enemy stats and displays them to the user.
 1. When the program starts, it calls the SeedRandom function to prepare the generator
