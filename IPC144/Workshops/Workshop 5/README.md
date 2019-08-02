@@ -24,7 +24,7 @@ This program will require the following 3 functions:
 
 Once the above three functions are implemented, write a program that displays the player's stats and days remaining followed by a menu to the user and prompts them for input. This program will track the number of days remaining (float, initialize to 8), the player's current HP (int, initialize to 10), the player's maximum HP (int, initialize to 10), and the player's experience (int, initialize to 0). The menu will allow the user to select either "1 - Rest at Inn", "2 - Train", "3 - Fight the Demon Lord", "4 - Quit Game". Based on the user's input, call the associated function passing in the required arguments. This program should not exit until either 4 is selected, or if days or the user's HP is less than or equal to zero. If either are zero or below, output "game over" before shutting down.
 
-The ouput of a typical run-through of your program should look like this (user's input highlighted in bold). This does not cover ll possibilities, ensure your follows all paths correctly:
+The ouput of a typical run-through of your program should look like this (user's input highlighted in bold). This does not cover all possibilities, ensure your program follows all paths correctly:
 
 <pre>
 Days remaining: 8.0 HP: 10 EXP: 0
