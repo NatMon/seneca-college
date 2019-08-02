@@ -16,7 +16,7 @@ Write a program that acts as an enemy generator for Code Quest! This program gen
 
 `void seedRandom()`: This function seeds the C random number generator with the current time of the system (to ensure unique numbers between program executions). This function receives no parameters and returns nothing.
 
-`float getRandom(float low, float high)`: This function returns a randomly generated value that is between two values low and high. This function accepts two floats (high and low rangwe) as parameters and returns a float.
+`float getRandom(float low, float high)`: This function returns a randomly generated value that is between two values low and high. This function accepts two floats (high and low range) as parameters and returns a float.
 
 `void clearInputBuffer()`: This function continuously consumes characters in the input buffer until it consumes a newline character. This function is used when the user has entered an invalid input and the buffer must be cleared before normal operations can be resumed. This function receives no parameters and returns nothing.
 
