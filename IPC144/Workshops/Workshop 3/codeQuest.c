@@ -12,8 +12,14 @@ int main(void)
   printf("+-----------------------+\n");
     
   float playerStrength, playerSpeed, playerDefense, playerIntelligence = 0;
-  int sum, luck = 0;
   float strengthRatio, speedRatio, defenseRatio, intelligenceRatio = 0;
+  int sum, luck, move = 0;
+  float playerHP = 10;
+  float enemyStrength = 30;
+  float enemyDefense = 40;
+  float enemyIntelligence = 25;
+  float enemyHP = 10;
+  float attackPower, magicPower = 0;
   
   printf("Character Creation\n");
   printf("Please enter your desired stats for your character:\n\n");
@@ -39,27 +45,17 @@ int main(void)
   defenseRatio = playerDefense / sum * 100;
   intelligenceRatio = playerIntelligence / sum * 100;
   
+  luck = sum % 30;
+  
   printf("Your player's final states are:\n\n");
   
   printf("Strength: %d\n", (int)strengthRatio);
   printf("Speed: %d\n", (int)speedRatio);
   printf("Defense: %d\n", (int)defenseRatio);
-  printf("Intelligence: %d\n", (int)intelligenceRatio);
-  
-  luck = sum % 30;
-  
+  printf("Intelligence: %d\n", (int)intelligenceRatio);  
   printf("Luck: %d\n\n", luck);
   
-  float playerHP = 10;
   
-  float enemyStrength = 30;
-  float enemyDefense = 40;
-  float enemyIntelligence = 25;
-  float enemyHP = 10;
-  
-  int move;
-  
-  float attackPower, magicPower;
   
   printf("Battle Start!\n");
   printf("Your HP: %.0f Enemy HP: %.0f\n", playerHP, enemyHP);
