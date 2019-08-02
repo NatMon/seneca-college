@@ -65,7 +65,7 @@ If your program's output exactly matches the output shown above, given the provi
 
 ### PART 2 (BONUS):
 
-### BUILDING THE GAME (OPTIONAL)
+### BUILDING THE GAME
 
 If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs.
 
