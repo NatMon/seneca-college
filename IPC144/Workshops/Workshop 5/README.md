@@ -78,7 +78,7 @@ Be sure to test the quit condition and the day limit condition to ensure they wo
 
 If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs.
 
-Copy the functions (and prototypes) into your codeQuest source code file. Make a new function with the following signature:
+Copy the functions (and prototypes) into your "codeQuest.c" file. Make a new function with the following signature:
 
 `void battleSequence(float* days, int* curHP, int* exp, int maxHP, int str, int def, int intel, int luck)`
 
