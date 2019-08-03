@@ -59,7 +59,7 @@ for (i = 0; i < 3; i++)
 
 The output of a typical run-through of your program should look like this (user input highlighted in bold). Items are randomly generated thus outputs will not match exactly:
 
-```
+<pre>
 1. Get New Item
 2. Show Inventory
 3. Use Item
