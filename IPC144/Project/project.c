@@ -189,6 +189,85 @@ void addCart(struct Cart* pShoppingCart, const int sku[], const float price[])
   int index = -1;
   
   do {
+    printf("Please input a SKU number: ");
+    scanf("%d", &input);
     
+    index = searchInventory(sku, input);
+    
+    if (index == -1) {
+      printf("Item does not exist in the shop! Please try again.\n"); 
+    }
+    else {
+      printf("Quantity: ");
+      scanf("%d", &pShoppingCart->quantity[pShoppingCart->size]);
+      
+      pShoppingCart->price[pShoppingCart->size] = price[index];
+      pShoppingCart->sku[pShoppingCart->size] = sku[index];
+      pShoppingCart->size++;
+      printf("The item is successfully added to the cart.\n\n\n");
+    }
+  } while (index == -1);
+}
+
+void removeCart(struct Cart* pShoppingCart)
+{
+  if (pShoppingCart->size == 0) {
+    printf("The cart is already empty!\n\n");  
   }
+  else {
+    pShoppingCart->size = 0;
+    printf("The cart is successfully removed!\n\n");
+  }
+}
+
+void checkout(struct Cart* pShoppingCart)
+{
+  float beofreTaxes = 0;
+  int i;
+  
+  for (i = 0; i < pShoppingCart->size; i++) {
+    beforeTaxes = beforeTaxes + pShoppingCart->price[i] * pShoppingCart->quantity[i];  
+  }
+  pShoppingCart->totalCost = beforeTaxes;
+  
+  printf("\n");
+  printf("The total price is sum = %.2f\n\n", pShoppingCart->totalCost);
+}
+
+int readInventory(const char filename[], int sku[], float price[])
+{
+  FILE *fp = NULL;
+  int i = 0;
+  
+  fp = fopen(filename, "r");
+  if (fp == NULL) {
+    printf("Failed to open file.\n");  
+    return -1;
+  }
+  else {
+    while (fscanf(fp, "%d, %f\n", &sku[i], &price[i]) != EOF) {
+      i++;  
+    }
+    fclose(fp);
+    return 0;
+  }
+}
+
+void printReceipt(const char filename[], struct Cart* pShoppingCart)
+{
+  FILE *fp = NULL;
+  int i;
+  
+  fp = fopen(filename, "w");
+  fprintf(fp, "\n");
+  fprintf(fp, "Shopping Cart\n");
+  fprintf("=====================================");
+  fprintf("Sku\tQuantity\tPrice\n");
+  
+  for (i = 0; i < pShoppingCart->size; i++) {
+    fprintf(fp, "%d\t%d\t\t%.2f\n", pShoppingCart->sku[i], pShoppingCart->quantity[i], pShoppingCart->price[i]);
+  }
+  fprintf(fp, "=====================================\n\n");
+  fprintf(fp, "The total price is sum = %.2f\n\n", pShoppingCart->totalCost);
+  fclose(fp);
 }
