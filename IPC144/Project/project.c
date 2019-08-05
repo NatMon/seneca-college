@@ -7,3 +7,188 @@
 #define MAX_INVENTORY_SIZE 10
 #define TAX .13
 #define MAX_ITEMS 10
+
+struct Cart {
+  int sku[MAX_ITEMS];
+  float price[MAX_ITEMS];
+  int quantity[MAX_ITEMS];
+  float totalCost;
+  int size;
+};
+
+void clear();
+void menu();
+int validate(const int low, const int high);
+void displayInventory(const int sku[], const float price[]);
+int searchInventory(const int sku[], const int item);
+void checkPrice(const int sku, const float price[]);
+void displayCart(const struct Cart* pShoppingCart);
+void addCart(struct Cart* pShoppingCart, const int sku[], const float price[]);
+void removeCart();
+void checkout();
+int readInventory(const char filename[], int sku[], float price[]);
+void printReceipt(const char filename[], struct Cart* pShoppingCart);
+
+int main()
+{
+  const int low = 1;
+  const int high = 8;
+  int input = 0;
+  int i ;
+  int sku[MAX_INVENTORY_SIZE];
+  float price[MAX_INVENTORY_SIZE];
+  int quantity[MAX_INVENTORY_SIZE];
+  char inventory[] = "inventory.dat";
+  char receipt[] = "receipt.dat";
+  struct Cart myCart;
+  myCart.size = 0;
+  
+  readInventory(inventory, sku, price);
+  
+  clear();
+  
+  printf("Welcome to the Grocery Store\n");
+  printf("============================\n");
+
+  do {
+    menu();
+    
+    input = validate(low, high);
+    
+    if (input == 1) {
+      displayInventory(sku, price);
+    }
+    else if (input == 2) {
+      checkPrice(sku, price);
+    }
+    else if (input == 3) {
+      displayCart(&myCart);
+    }
+    else if (input == 4) {
+      addCart(&myCart, sku, price);
+    }
+    else if (input == 5) {
+      removeCart(&myCart);
+    }
+    else if (input == 6) {
+      checkout(&myCart);
+      printReceipt(receipt, &myCart);
+    }
+    else if (input == 7) {
+      clear();
+    }
+    else if (input == 8) {
+      printf("Goodbye!\n");
+    }
+  } while (input != 8);
+  return 0;
+}
+
+void clear()
+{
+  int i;
+  for (i = 0; i < 40; i++) {
+    printf("\n");
+  }
+}
+
+void menu()
+{
+  printf("Please select from the following options:\n");
+  printf("1) Display the inventory.\n");
+  printf("2) Price check.\n");
+  printf("3) Display my shopping cart.\n");
+  printf("4) Add to cart\n");
+  printf("5) Remove from cart.\n");
+  printf("6) Check out.\n");
+  printf("7) Clear screen.\n");
+  printf("8) Exit.\n");
+}
+
+int validate(const int low, const int high)
+{
+  int input = 0;
+  printf("select: ");
+  do {
+    scanf("%d", &input);
+    
+    if (input < low || input > high) {
+      printf("Invalid input, try again: ");
+    }
+  } while (input < low || input > high);
+  return input;
+}
+
+void displayInventory(const int sku[], const float price[])
+{
+  int i;
+  
+  printf("\n");
+  printf("Inventory\n");
+  printf("=====================================\n\n");
+  printf("Sku\tPrice\n");
+  
+  for (i = 0; i < MAX_INVENTORY_SIZE; i++) {
+    printf("%d\t%.2f\n", sku[i], price[i]);
+  }
+  printf("=====================================\n\n");
+}
+
+int searchInventory(const int sku[], const int item)
+{
+  int i;
+  
+  for (i = 0; i < MAX_INVENTORY_SIZE; i++) {
+    if (sku[i] == item)
+      return i;
+  }
+  return -1;
+}
+
+void checkPrice(const int sku[], const float price[])
+{
+  int input = 0;
+  int i;
+  int stop = 0;
+  
+  printf("Please input the sku number of the item: ");
+  scanf("%d", &input);
+  
+  for (i = 0; i < MAX_INVENTORY_SIZE && stop == 0; i++) {
+    if (sku[i] == input) {
+      printf("Item %d costs $.2f.\n\n", sku[i], price[i]);
+      stop = 1;
+    }
+  }
+  if (i == MAX_INVENTORY_SIZE) {
+    printf("Item does not exist in the shop! Please try again.\n\n");  
+  }
+}
+
+void displayCart(const struct Cart* pShoppingCart)
+{
+  int i;
+  printf("\n");
+  printf("Shopping Cart\n");
+  printf("=====================================\n");
+  printf("Sku\tQuantity\tPrice\n");
+  
+  for (i = 0; i < pShoppingCart->size; i++) {
+    if (pShoppingCart->quantity[i] > 0) {
+      printf("%d\t%d\t\t%.2f\n", pShoppingCart->sku[i], pShoppingCart->quantity[i], pShoppingCart->price[i]);  
+    }
+  }
+  printf("=====================================\n");
+}
+
+void addCart(struct Cart* pShoppingCart, const int sku[], const float price[])
+{
+  int input = 0;
+  int i;
+  int quantity = 0;
+  int index = -1;
+  
+  do {
+    
+  }
+}
