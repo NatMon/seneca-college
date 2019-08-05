@@ -54,7 +54,7 @@ Please enter the following Item info:
  Type:
  Power:
  
- Collected Input:
+Collected Input:
  
 Name    Lvl   Str   Spd   Def   Int   Lck   MHP 
 Ariel   2     20    10    10    30    10    100
