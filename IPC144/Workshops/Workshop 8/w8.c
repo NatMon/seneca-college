@@ -44,7 +44,8 @@ int main()
   return 0;
 }
 
-struct Item loadItem() {
+struct Item loadItem() 
+{
   struct Item array;
   
   printf("Please enter the following Item info:\n");
