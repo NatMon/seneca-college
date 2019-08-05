@@ -25,5 +25,5 @@ I declare that the attached assignment is wholly my own work in accordance with 
 
 Name _____________________________________    Student ID ______________________
 ```
-5. You must use blank lines to separate logical units int he source code
+5. You must use blank lines to separate logical units in the source code
 6. You are not allowed to declare global variables
