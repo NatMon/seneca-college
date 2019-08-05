@@ -35,24 +35,24 @@ THE output of a typical run-through of your program should look like this (user 
 
 <pre>
 Please enter the following player info:
- Name:
- Level:
- Strength:
- Speed:
- Defense:
- Intelligence:
- Luck:
- Max HP:
+ Name: <b>Ariel</b>
+ Level: <b>2</b>
+ Strength: <b>20</b>
+ Speed: <b>10</b>
+ Defense: <b>10</b>
+ Intelligence: <b>30</b>
+ Luck: <b>10</b>
+ Max HP: <b>100</b>
  
 Please enter the following Item info:
- Name:
- Type:
- Power:
+ Name: <b>Potion</b>
+ Type: <b>3</b>
+ Power: <b>10</b>
  
 Please enter the following Item info:
- Name:
- Type:
- Power:
+ Name: <b>Elixer</b>
+ Type: <b>4</b>
+ Power: <b>5</b>
  
 Collected Input:
  
