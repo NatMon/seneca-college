@@ -34,3 +34,96 @@ c)
 
 Your program is complete if your output matches the following output (bold numbers show the user's input):
 
+<pre>
+Welcome to the Grocery Store
+============================
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>1</b>
+
+Inventory
+============================================
+Sku                   Price
+2358                  12.60
+7654                  34.99
+1209                   5.70      
+1345                  12.50
+7809                  23.80
+1092                  10.00 
+8723                   3.23
+6654                   2.12
+5455                  14.99 
+7234                  95.99
+============================================
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>7654</b>
+Quantity: <b>3</b>
+The item is successfully added to the cart.
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>2358</b>
+Quantity: <b>1</b>
+The item is successfully added to the cart.
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>7234</b>
+Quantity: <b>2</b>
+The item is successfully added to the cart.
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>6</b>
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>8</b>
+Good bye!
