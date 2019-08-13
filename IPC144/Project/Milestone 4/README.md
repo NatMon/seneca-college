@@ -1,3 +1,5 @@
+## Milestone 4
+
 In this milestone, you are going to use a C file. You are to write two functions and modify the main program to read records of inventory items, analyze them and write the receipt to a file.
 
 a) Write the following function:
