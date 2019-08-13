@@ -89,4 +89,103 @@ Sku                   Price
 1345                  12.50
 ============================================
 
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>2358</b>
+Quantity: <b>3</b>
+The item is successfully added to the cart.
 
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>1209</b>
+Quantity: <b>1</b>
+The item is successfully added to the cart.
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>4</b>
+Please input a SKU number: <b>2222</b>
+Item does not exist in the shop! Please try again.
+Please input a SKU number: <b>1345</b>
+Quantity: <b>2</b>
+The item is successfully added to the cart.
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>3</b>
+
+Shopping Cart
+============================================
+Sku                   Price
+2358                  12.60
+1209                   5.70      
+1345                  12.50
+============================================
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>6</b>
+
+The total price is sum = 68.50
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>5</b>
+The cart is successfully removed!
+
+Please select from the following options:
+1) Display the inventory.
+2) Price check.
+3) Display my shopping cart.
+4) Add to cart.
+5) Remove the cart.
+6) Check out.
+7) Clear screen.
+8) Exit.
+Select: <b>8</b>
+Goodbye!
+</pre>
