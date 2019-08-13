@@ -28,7 +28,7 @@ Name _____________________________________    Student ID ______________________
 5. You must use blank lines to separate logical units in the source code
 6. You are not allowed to declare global variables
 
-### Milestone 1
+## Milestone 1
 
 In this milestone, you are to write three functions and a main program to create a menu and input user's selection.
 
