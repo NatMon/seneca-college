@@ -64,7 +64,7 @@ Note: Add the following variables in your main program:
 
 ### Program Completion
 
-Your program is complete if your output matches the following output (bold numbers show the user's inpu):
+Your program is complete if your output matches the following output (bold numbers show the user's input):
 
 <pre>
 Welcome to the Grocery Store
