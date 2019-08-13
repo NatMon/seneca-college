@@ -22,8 +22,7 @@ cd codeQuest
 Now you have a place to store your source code. To begin writing source code, create a new file called "w1.c" in a text editor of your choice (such as vi or Pico) and enter the following C code:
 
 ```c
-// Code Quest
-// By: Your name here
+// Name: Your name here
 // w1.c
 
 #include <stdio.h>
