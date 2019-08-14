@@ -49,11 +49,11 @@ struct Item loadItem()
   struct Item array;
   
   printf("Please enter the following Item info:\n");
-  printf("Name: ");
+  printf(" Name: ");
   scanf("%s", array.ItemName);
-  printf("Type: ");
+  printf(" Type: ");
   scanf("%d", &array.ItemType);
-  printf("Power: ");
+  printf(" Power: ");
   scanf("%d", &array.ItemPower);
   printf("\n");
   
@@ -65,21 +65,21 @@ struct Player loadPlayer()
   struct Player single_player;
   
   printf("Please enter the following Player info:\n");
-  printf("Name: ");
+  printf(" Name: ");
   scanf("%s", single_player.Name);
-  printf("Level: ");
+  printf(" Level: ");
   scanf("%d", &single_player.Level);
-  printf("Strength: ");
+  printf(" Strength: ");
   scanf("%d", &single_player.Strength);
-  printf("Speed: ");
+  printf(" Speed: ");
   scanf("%d", &single_player.Speed);
-  printf("Defense: ");
+  printf(" Defense: ");
   scanf("%d", &single_player.Defense);
-  printf("Intelligence: ");
+  printf(" Intelligence: ");
   scanf("%d", &single_player.Intelligence);
-  printf("Luck: ");
+  printf(" Luck: ");
   scanf("%d", &single_player.Luck);
-  printf("Max HP: ");
+  printf(" Max HP: ");
   scanf("%d", &single_player.MaxHP);
   printf("\n");
   
