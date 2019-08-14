@@ -54,7 +54,9 @@ int validate(const int low, const int high)
   printf("Select: ");
   do {
     scanf("%d", &input);
-    
+    if (input >=low && input <= high) {
+      printf("\n");
+    }
     if (input < low || input > high) {
       printf("Invalid input, try again: ");
     }
