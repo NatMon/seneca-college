@@ -51,7 +51,7 @@ void menu()
 int validate(const int low, const int high)
 {
   int input = 0;
-  printf("\nSelect: ");
+  printf("Select: ");
   do {
     scanf("%d", &input);
     
