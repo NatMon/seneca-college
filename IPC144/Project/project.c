@@ -222,7 +222,7 @@ void removeCart(struct Cart* pShoppingCart)
 
 void checkout(struct Cart* pShoppingCart)
 {
-  float beofreTaxes = 0;
+  float beforeTaxes = 0;
   int i;
   
   for (i = 0; i < pShoppingCart->size; i++) {
