@@ -21,29 +21,23 @@ void menu();
 int validate(const int low, const int high);
 void displayInventory(const int sku[], const float price[]);
 int searchInventory(const int sku[], const int item);
-void checkPrice(const int sku, const float price[]);
-void displayCart(const struct Cart* pShoppingCart);
-void addCart(struct Cart* pShoppingCart, const int sku[], const float price[]);
+void checkPrice(const int sku[], const float price[]);
+void displayCart();
+void addCart();
 void removeCart();
 void checkout();
-int readInventory(const char filename[], int sku[], float price[]);
-void printReceipt(const char filename[], struct Cart* pShoppingCart);
 
 int main()
 {
   const int low = 1;
   const int high = 8;
   int input = 0;
-  int i ;
-  int sku[MAX_INVENTORY_SIZE];
-  float price[MAX_INVENTORY_SIZE];
-  int quantity[MAX_INVENTORY_SIZE];
-  char inventory[] = "inventory.dat";
-  char receipt[] = "receipt.dat";
+  int i;
+  int sku[MAX_INVENTORY_SIZE] = {2358,7654,1209,1345};
+  float price[MAX_INVENTORY_SIZE] = {12.60,34.99,5.70,12.50};
+  //int quantity[MAX_INVENTORY_SIZE];
   struct Cart myCart;
   myCart.size = 0;
-  
-  readInventory(inventory, sku, price);
   
   clear();
   
@@ -62,17 +56,16 @@ int main()
       checkPrice(sku, price);
     }
     else if (input == 3) {
-      displayCart(&myCart);
+      displayCart();
     }
     else if (input == 4) {
-      addCart(&myCart, sku, price);
+      addCart();
     }
     else if (input == 5) {
-      removeCart(&myCart);
+      removeCart();
     }
     else if (input == 6) {
-      checkout(&myCart);
-      printReceipt(receipt, &myCart);
+      checkout();
     }
     else if (input == 7) {
       clear();
@@ -156,7 +149,7 @@ void checkPrice(const int sku[], const float price[])
   
   for (i = 0; i < MAX_INVENTORY_SIZE && stop == 0; i++) {
     if (sku[i] == input) {
-      printf("Item %d costs $.2f.\n\n", sku[i], price[i]);
+      printf("Item %d costs $%.2f.\n\n", sku[i], price[i]);
       stop = 1;
     }
   }
@@ -165,109 +158,22 @@ void checkPrice(const int sku[], const float price[])
   }
 }
 
-void displayCart(const struct Cart* pShoppingCart)
+void displayCart()
 {
-  int i;
-  printf("\n");
-  printf("Shopping Cart\n");
-  printf("=====================================\n");
-  printf("Sku\tQuantity\tPrice\n");
-  
-  for (i = 0; i < pShoppingCart->size; i++) {
-    if (pShoppingCart->quantity[i] > 0) {
-      printf("%d\t%d\t\t%.2f\n", pShoppingCart->sku[i], pShoppingCart->quantity[i], pShoppingCart->price[i]);  
-    }
-  }
-  printf("=====================================\n");
+  printf("Not implemented\n\n");
 }
 
-void addCart(struct Cart* pShoppingCart, const int sku[], const float price[])
+void addCart()
 {
-  int input = 0;
-  int i;
-  int quantity = 0;
-  int index = -1;
-  
-  do {
-    printf("Please input a SKU number: ");
-    scanf("%d", &input);
-    
-    index = searchInventory(sku, input);
-    
-    if (index == -1) {
-      printf("Item does not exist in the shop! Please try again.\n"); 
-    }
-    else {
-      printf("Quantity: ");
-      scanf("%d", &pShoppingCart->quantity[pShoppingCart->size]);
-      
-      pShoppingCart->price[pShoppingCart->size] = price[index];
-      pShoppingCart->sku[pShoppingCart->size] = sku[index];
-      pShoppingCart->size++;
-      printf("The item is successfully added to the cart.\n\n\n");
-    }
-  } while (index == -1);
+  printf("Not implemented\n\n");
 }
 
-void removeCart(struct Cart* pShoppingCart)
+void removeCart()
 {
-  if (pShoppingCart->size == 0) {
-    printf("The cart is already empty!\n\n");  
-  }
-  else {
-    pShoppingCart->size = 0;
-    printf("The cart is successfully removed!\n\n");
-  }
+  printf("Not implemented\n\n");  
 }
 
-void checkout(struct Cart* pShoppingCart)
+void checkout()
 {
-  float beofreTaxes = 0;
-  int i;
-  
-  for (i = 0; i < pShoppingCart->size; i++) {
-    beforeTaxes = beforeTaxes + pShoppingCart->price[i] * pShoppingCart->quantity[i];  
-  }
-  pShoppingCart->totalCost = beforeTaxes;
-  
-  printf("\n");
-  printf("The total price is sum = %.2f\n\n", pShoppingCart->totalCost);
-}
-
-int readInventory(const char filename[], int sku[], float price[])
-{
-  FILE *fp = NULL;
-  int i = 0;
-  
-  fp = fopen(filename, "r");
-  if (fp == NULL) {
-    printf("Failed to open file.\n");  
-    return -1;
-  }
-  else {
-    while (fscanf(fp, "%d, %f\n", &sku[i], &price[i]) != EOF) {
-      i++;  
-    }
-    fclose(fp);
-    return 0;
-  }
-}
-
-void printReceipt(const char filename[], struct Cart* pShoppingCart)
-{
-  FILE *fp = NULL;
-  int i;
-  
-  fp = fopen(filename, "w");
-  fprintf(fp, "\n");
-  fprintf(fp, "Shopping Cart\n");
-  fprintf("=====================================");
-  fprintf("Sku\tQuantity\tPrice\n");
-  
-  for (i = 0; i < pShoppingCart->size; i++) {
-    fprintf(fp, "%d\t%d\t\t%.2f\n", pShoppingCart->sku[i], pShoppingCart->quantity[i], pShoppingCart->price[i]);
-  }
-  fprintf(fp, "=====================================\n\n");
-  fprintf(fp, "The total price is sum = %.2f\n\n", pShoppingCart->totalCost);
-  fclose(fp);
+  printf("Not implemented\n\n");  
 }
