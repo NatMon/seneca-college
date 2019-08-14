@@ -64,7 +64,7 @@ struct Player loadPlayer()
 {
   struct Player single_player;
   
-  printf("Please enter the following player infor:\n");
+  printf("Please enter the following Player info:\n");
   printf("Name: ");
   scanf("%s", single_player.Name);
   printf("Level: ");
