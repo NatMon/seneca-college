@@ -10,6 +10,7 @@ Upon successful completion of this workshop, you will be able to
 - Use loops to repeat a set of operations until a goal is complete
 
 ### PART 1:
+
 ### SPECIFICATIONS
 
 In this lab you are going to create a program "w3.c", you are going to simulate a battle between a player and an enemy.
