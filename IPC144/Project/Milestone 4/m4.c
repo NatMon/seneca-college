@@ -262,7 +262,7 @@ void printReceipt(const char filename[], struct Cart* pShoppingCart)
   fprintf(fp, "\n");
   fprintf(fp, "Shopping Cart\n");
   fprintf(fp, "============================\n");
-  fprintf(fp, "Sku\tQuantity\tPrice\n");
+  fprintf(fp, "SKU\tQuantity\tPrice\n");
   
   for (i = 0; i < pShoppingCart->size; i++) {
     fprintf(fp, "%d\t%d\t\t%.2f\n", pShoppingCart->sku[i], pShoppingCart->quantity[i], pShoppingCart->price[i]);
