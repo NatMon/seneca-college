@@ -106,7 +106,7 @@ void displayInventory(const int sku[], const float price[])
   printf("\n");
   printf("Inventory\n");
   printf("============================\n");
-  printf("Sku\t\tPrice\n");
+  printf("SKU\t\tPrice\n");
   
   for (i = 0; i < MAX_INVENTORY_SIZE; i++) {
     printf("%d\t", sku[i]);
@@ -132,7 +132,7 @@ void checkPrice(const int sku[], const float price[])
   int i;
   int stop = 0;
   
-  printf("Please input the sku number of the item: ");
+  printf("Please input the SKU number of the item: ");
   scanf("%d", &input);
   
   for (i = 0; i < MAX_INVENTORY_SIZE && stop == 0; i++) {
