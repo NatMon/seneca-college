@@ -126,7 +126,7 @@ void displayInventory(const int sku[], const float price[])
   printf("\n");
   printf("Inventory\n");
   printf("=====================================\n\n");
-  printf("Sku\tPrice\n");
+  printf("Sku\t\tPrice\n");
   
   for (i = 0; i < MAX_INVENTORY_SIZE; i++) {
     printf("%d\t%.2f\n", sku[i], price[i]);
