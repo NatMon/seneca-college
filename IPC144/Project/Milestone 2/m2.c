@@ -8,14 +8,6 @@
 #define TAX .13
 #define MAX_ITEMS 10
 
-struct Cart {
-  int sku[MAX_ITEMS];
-  float price[MAX_ITEMS];
-  int quantity[MAX_ITEMS];
-  float totalCost;
-  int size;
-};
-
 void clear();
 void menu();
 int validate(const int low, const int high);
@@ -35,10 +27,7 @@ int main()
   int i;
   int sku[MAX_INVENTORY_SIZE] = {2358,7654,1209,1345};
   float price[MAX_INVENTORY_SIZE] = {12.60,34.99,5.70,12.50};
-  //int quantity[MAX_INVENTORY_SIZE];
-  struct Cart myCart;
-  myCart.size = 0;
-  
+
   clear();
   
   printf("Welcome to the Grocery Store\n");
