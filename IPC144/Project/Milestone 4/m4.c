@@ -23,9 +23,9 @@ void displayInventory(const int sku[], const float price[]);
 int searchInventory(const int sku[], const int item);
 void checkPrice(const int sku[], const float price[]);
 void displayCart(const struct Cart* pShoppingCart);
-void addCart();
-void removeCart();
-void checkout();
+void addCart(struct Cart* pShoppingCart, const int sku[], const float price[]);
+void removeCart(struct Cart* pShoppingCart);
+void checkout(struct Cart* pShoppingCart);
 int readInventory(const char filename[], int sku[], float price[]);
 void printReceipt(const char filename[], struct Cart* pShoppingCart);
 
@@ -37,8 +37,12 @@ int main()
   int i;
   int sku[MAX_INVENTORY_SIZE];
   float price[MAX_INVENTORY_SIZE];
+  char inventory[] = "inventory.dat";
+  char receipt[] = "receipt.dat";
   struct Cart myCart;
   myCart.size = 0;
+
+  readInventory(inventory, sku, price);
 
   clear();
   
@@ -67,6 +71,7 @@ int main()
     }
     else if (input == 6) {
       checkout(&myCart);
+      printReceipt(receipt, &myCart);
     }
     else if (input == 7) {
       clear();
