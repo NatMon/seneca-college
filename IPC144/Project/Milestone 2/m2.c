@@ -112,7 +112,7 @@ void displayInventory(const int sku[], const float price[])
     printf("%d\t", sku[i]);
     printf("%5.2f\n", price[i]);
   }
-  printf("============================\n");
+  printf("============================\n\n");
 }
 
 int searchInventory(const int sku[], const int item)
