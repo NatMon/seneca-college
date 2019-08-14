@@ -22,9 +22,9 @@ void displayInventory(const int sku[], const float price[]);
 int searchInventory(const int sku[], const int item);
 void checkPrice(const int sku[], const float price[]);
 void displayCart(const struct Cart* pShoppingCart);
-void addCart();
-void removeCart();
-void checkout();
+void addCart(struct Cart* pShoppingCart, const int sku[], const float price[]);
+void removeCart(struct Cart* pShoppingCart);
+void checkout(struct Cart* pShoppingCart);
 
 int main()
 {
