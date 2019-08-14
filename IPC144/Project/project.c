@@ -34,7 +34,7 @@ int main()
   const int low = 1;
   const int high = 8;
   int input = 0;
-  int i ;
+  int i;
   int sku[MAX_INVENTORY_SIZE];
   float price[MAX_INVENTORY_SIZE];
   int quantity[MAX_INVENTORY_SIZE];
