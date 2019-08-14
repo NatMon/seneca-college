@@ -52,7 +52,7 @@ void rest_at_inn(float* days_remaining, int* hp_remaining, int max)
   printf("You rested up at the inn\n\n");
   
   *hp_remaining = max;
-  *days_remaining -= - 1;
+  *days_remaining -= 1;
 }
 
 void train(float* days_remaining, int* hp_remaining, int* experience) 
