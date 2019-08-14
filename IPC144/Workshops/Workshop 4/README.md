@@ -14,14 +14,12 @@ Upon successful completion of this workshop, you will be able to
 ### SPECIFICATIONS
 
 Write a program that contains a series of utilities for Code Quest! The program requires the following four functions:
-
 - `void clearScreen()`: This is the clear screen function. This simple function prints out 40 newlines to clear the screen. It requires no parameters and returns nothing
 - `int validate(int low, int high)`: This is the validate function. This function prompts the user to input an integer. This function verifies that the integer is within a specified range (low and high), if not, the function displays a warning and prompts the user again. This function requires 2 parameters (low and high range) and returns the validated input from the user. You can assume the user will only enter numbers
 - `void newGame()`: This is the new game function. This is a placeholder function for a later lab. This function displays the message "Not Implemented!". The functions requires no parameters and returns nothing
 - `void load()`: This is the load function. This is a placeholder function for a later lab. This function displays the message "Not Implemented!". The function requires no parameters and returns nothing
 
 Once the above four functions are implemented, write a program to
-
 - Call `clearScreen` function to clear the screen
 - Display a menu to the user. The menu will allow the user to select either "1 - New Game", "2 - Load Game", "3 - Exit"
 - Call the `validate` function to prompt the user for input, and validate the user's input. Note that the user's input must be within the range 1 and 3
@@ -61,14 +59,11 @@ Select: <b>3</b>
 Good Bye!
 </pre>
 
-If your program's output exactly matches the output shown above, given the provided inputs, then your lab is complete and ready to be submitted.
-
 ### PART 2 (BONUS):
 
 ### BUILDING THE GAME
 
-If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs.
-
+If you have completed all previous game labs, you may complete this section in order to merge your current lab with your previous labs:
 - Copy the functions (and prototypes) into your "codeQuest.c" file
 - Copy the main code from this lab and paste it directly below code quest intro banner (before character creation)
 - Move the character creation and battle scene code from the main and place it in the new game function, replacing the "Not implemented!" print statement
