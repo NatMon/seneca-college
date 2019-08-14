@@ -14,7 +14,7 @@ Upon successful completion of this workshop, you will be able to
 ### SPECIFICATIONS
 
 Each player has the following float attributes: _strength_, _speed_, _defense_, _intelligence_.  
-Also, each player has the following four float attribute ratio: _strengthRatio_, _speedRatio_, _defenseRatio_, _intelligenceRatio_.  
+Also, each player has the following four float attribute ratios: _strengthRatio_, _speedRatio_, _defenseRatio_, _intelligenceRatio_.  
 In addition, each player has an integer variable _luck_.
 
 Write a program to 
