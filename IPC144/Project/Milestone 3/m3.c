@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 #define MAX_INVENTORY_SIZE 4
-#define TAX .13
 #define MAX_ITEMS 10
 
 struct Cart {
