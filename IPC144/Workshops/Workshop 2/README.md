@@ -46,7 +46,7 @@ Intelligence: 49
 Luck: 1
 </pre>
 
-You may assume that the user enters valid numbers. If your program's output exactly matches the output shown above, given the provided inputs, then part 1 is complete and you are ready to do part 2.
+You may assume that the user enters valid numbers. 
 
 ### PART 2 (BONUS):
 
