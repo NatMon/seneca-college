@@ -4,9 +4,7 @@
 /* I declare that the attached assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students. */
 
 #include <stdio.h>
-#define MAX_INVENTORY_SIZE 10
-#define TAX .13
-#define MAX_ITEMS 10
+#define MAX_INVENTORY_SIZE 4
 
 void clear();
 void menu();
@@ -90,7 +88,7 @@ void menu()
 int validate(const int low, const int high)
 {
   int input = 0;
-  printf("\nSelect: ");
+  printf("Select: ");
   do {
     scanf("%d", &input);
     
@@ -107,8 +105,8 @@ void displayInventory(const int sku[], const float price[])
   
   printf("\n");
   printf("Inventory\n");
-  printf("=====================================\n\n");
-  printf("Sku\tPrice\n");
+  printf("=====================================\n");
+  printf("Sku\t\tPrice\n");
   
   for (i = 0; i < MAX_INVENTORY_SIZE; i++) {
     printf("%d\t%.2f\n", sku[i], price[i]);
